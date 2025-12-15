@@ -76,6 +76,31 @@ body {
 }
 
 /* =========================
+   HOME GRID
+========================= */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: stretch;
+}
+
+
+@media (max-width: 900px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   HOME LAYOUT OVERRIDE
+========================= */
+.home-container {
+  max-width: 1200px;
+}
+
+
+/* =========================
    TYPOGRAPHY
 ========================= */
 h1 {
@@ -146,10 +171,12 @@ p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.06);
 }
 
+
 .card p {
   font-size: 16px;
   color: #4b5563;
 }
+
 
 .card span {
   font-size: 14px;
@@ -167,4 +194,24 @@ p {
   width: 20px;
   height: 20px;
   stroke: var(--accent);
+}
+
+/* =========================
+   IMAGE CARDS
+========================= */
+
+.image-card {
+  padding: 0;
+  border: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.85);
 }
