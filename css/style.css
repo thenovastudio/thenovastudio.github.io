@@ -1,3 +1,13 @@
+/* =========================
+   GLOBAL VARIABLES
+========================= */
+:root {
+  --accent: #2563eb;
+}
+
+/* =========================
+   RESET & BASE
+========================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,24 +15,31 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f9fafb;
   color: #111;
   line-height: 1.6;
 }
 
-/* NAV */
+/* =========================
+   NAVBAR
+========================= */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 40px;
-  border-bottom: 1px solid #eee;
+
+  padding: 12px 60px;
+  background: #fff;
+
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
 }
 
-.logo {
-  font-weight: 600;
-  font-size: 18px;
+.logo img {
+  height: 100px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -35,80 +52,119 @@ body {
   text-decoration: none;
   color: #111;
   font-size: 15px;
+  line-height: 1;
 }
 
 .nav-links a:hover {
   opacity: 0.6;
 }
 
-/* CONTENT */
+/* =========================
+   LAYOUT
+========================= */
 .container {
   max-width: 900px;
   padding: 80px 40px;
 }
 
+.container > h1 {
+  margin-bottom: 12px;
+}
+
+.container > p {
+  max-width: 700px;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
 h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 52px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #111;
 }
 
 p {
   font-size: 18px;
-  color: #444;
-  max-width: 600px;
+  color: #374151;
 }
 
-.projects {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.project h2 {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.project p {
-  font-size: 16px;
-  margin-bottom: 6px;
-}
-
-.project span {
-  font-size: 14px;
-  color: #777;
-}
-
-.services {
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
-.service h2 {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.service p {
-  font-size: 16px;
-  color: #444;
-  max-width: 600px;
-}
-
+/* =========================
+   CTA
+========================= */
 .cta {
   display: inline-block;
   margin-top: 40px;
   padding: 14px 28px;
-  border: 1px solid #111;
+  border-radius: 12px;
+
+  background: var(--accent);
+  color: #fff;
   text-decoration: none;
-  color: #111;
   font-size: 15px;
 }
 
 .cta:hover {
-  background: #111;
-  color: white;
+  opacity: 0.9;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 60px;
+  max-width: 720px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 32px;
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.card p {
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.card span {
+  font-size: 14px;
+  color: var(--accent);
+}
+
+/* =========================
+   CARD ICONS (LUCIDE)
+========================= */
+.card-icon {
+  margin-bottom: 16px;
+}
+
+.card-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--accent);
 }

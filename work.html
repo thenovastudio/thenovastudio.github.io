@@ -4,25 +4,37 @@
   <meta charset="UTF-8" />
   <title>Werk – Nova Studio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <nav class="nav">
-    <div class="logo">Nova Studio</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="work.html">Werk</a></li>
-      <li><a href="services.html">Diensten</a></li>
-      <li><a href="about.html">Over</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <main class="container">
+<nav class="nav">
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="Nova Studio logo" />
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Werk</a></li>
+    <li><a href="services.html">Diensten</a></li>
+    <li><a href="about.html">Over</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
   <h1>Werk</h1>
   <p>Een selectie van projecten en concepten ontwikkeld binnen Nova Studio.</p>
 
-  <section class="projects">
-    <div class="project">
+  <div class="card-group">
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="layout"></i>
+      </div>
       <h2>Nova Studio Portfolio</h2>
       <p>
         Ontwerp en ontwikkeling van een moderne portfolio website
@@ -31,15 +43,22 @@
       <span>HTML · CSS · JavaScript</span>
     </div>
 
-    <div class="project">
-      <h2>Slaap Reset (concept)</h2>
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="moon"></i>
+      </div>
+      <h2>Sleep Reset (iOS App)</h2>
       <p>
-        Conceptuele webapp gericht op het verbeteren van slaapritme
+        Conceptuele iOS app gericht op het verbeteren van slaapritme
         door slimme planning en eenvoudige inzichten.
       </p>
-      <span>UI/UX · Web app concept</span>
+      <span>UI/UX · iOS app concept</span>
     </div>
-  </section>
+  </div>
 </main>
+
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>

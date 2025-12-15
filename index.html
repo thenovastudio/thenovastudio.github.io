@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nova Studio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <nav class="nav">
-    <div class="logo">Nova Studio</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="work.html">Werk</a></li>
-      <li><a href="services.html">Diensten</a></li>
-      <li><a href="about.html">Over</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <main class="container">
-  <h1>Digitale oplossingen, strak gebouwd.</h1>
-  <p>
-    Nova Studio bouwt moderne websites en webapps voor bedrijven
-    die eenvoud, kwaliteit en duidelijke communicatie waarderen.
-  </p>
+<nav class="nav">
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="Nova Studio logo" />
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Werk</a></li>
+    <li><a href="services.html">Diensten</a></li>
+    <li><a href="about.html">Over</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <a href="contact.html" class="cta">
-    Bespreek jouw project
-  </a>
+<main class="container">
+  <div class="card">
+    <div class="card-icon">
+      <i data-lucide="sparkles"></i>
+    </div>
+    <h1>Digitale oplossingen, strak gebouwd.</h1>
+    <p>
+      Nova Studio bouwt moderne websites en webapps voor bedrijven
+      die eenvoud, kwaliteit en duidelijke communicatie waarderen.
+    </p>
+    <a href="contact.html" class="cta">
+      Bespreek jouw project
+    </a>
+  </div>
 </main>
+
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>

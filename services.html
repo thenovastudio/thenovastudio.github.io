@@ -2,30 +2,42 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
-  <title>Services – Nova Studio</title>
+  <title>Diensten – Nova Studio</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <nav class="nav">
-    <div class="logo">Nova Studio</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="work.html">Werk</a></li>
-      <li><a href="services.html">Diensten</a></li>
-      <li><a href="about.html">Over</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <main class="container">
+<nav class="nav">
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="Nova Studio logo" />
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Werk</a></li>
+    <li><a href="services.html">Diensten</a></li>
+    <li><a href="about.html">Over</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
   <h1>Diensten</h1>
   <p>
     Elk project is anders. Daarom werkt Nova Studio uitsluitend
     met maatwerk, afgestemd op jouw doelen en noden.
   </p>
 
-  <section class="services">
-    <div class="service">
+  <div class="card-group">
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="globe"></i>
+      </div>
       <h2>Websites op maat</h2>
       <p>
         Strakke, snelle websites die vertrouwen uitstralen
@@ -33,7 +45,10 @@
       </p>
     </div>
 
-    <div class="service">
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="code"></i>
+      </div>
       <h2>Webapps & concepten</h2>
       <p>
         Van idee tot werkend concept. Gericht op eenvoud,
@@ -41,14 +56,21 @@
       </p>
     </div>
 
-    <div class="service">
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="settings"></i>
+      </div>
       <h2>Optimalisatie & onderhoud</h2>
       <p>
         Verbeteringen, updates en ondersteuning om jouw
         digitale product performant en up-to-date te houden.
       </p>
     </div>
-  </section>
+  </div>
 </main>
+
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>
