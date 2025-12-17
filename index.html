@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nova Studio</title>
+
   <link rel="stylesheet" href="css/style.css" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
@@ -18,18 +21,21 @@
       <img src="assets/images/logo.png" alt="Nova Studio logo" />
     </a>
   </div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="work.html">Werk</a></li>
-    <li><a href="services.html">Diensten</a></li>
-    <li><a href="about.html">Over</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+ <ul class="nav-links">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="work.html" >Werk</a></li>
+  <li><a href="services.html" >Diensten</a></li>
+  <li><a href="about.html">Over</a></li>
+  <li><a href="why.html" >Waarom</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
 
 <main class="container home-container">
+
+  <!-- HERO -->
   <div class="home-grid">
-    
+
     <!-- TEXT CARD -->
     <div class="card">
       <div class="card-icon">
@@ -37,6 +43,7 @@
       </div>
 
       <h1>Digitale oplossingen, strak gebouwd.</h1>
+
       <p>
         Nova Studio bouwt moderne websites en webapps voor bedrijven
         die eenvoud, kwaliteit en duidelijke communicatie waarderen.
@@ -53,11 +60,78 @@
     </div>
 
   </div>
-</main>
 
+  <!-- WORK INTRO -->
+  <section class="home-work-intro">
+    <h2>Ons werk</h2>
+    <p>Projecten en concepten ontwikkeld binnen Nova Studio.</p>
+    <a href="why.html" class="home-why-link">
+  Waarom dit werkt →
+</a>
+  </section>
+
+  <section class="home-work-grid">
+
+  <div class="card">
+    <div class="card-icon">
+      <i data-lucide="layout"></i>
+    </div>
+    <h3>Nova Studio Portfolio (Website)</h3>
+    <p>
+      Ontwerp en ontwikkeling van een moderne portfolio website
+      met focus op eenvoud, performance en duidelijke communicatie.
+    </p>
+    <span>HTML · CSS · JavaScript</span>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">
+      <i data-lucide="moon"></i>
+    </div>
+    <h3>Sleep Reset (iOS App)</h3>
+    <p>
+      Conceptuele iOS app gericht op het verbeteren van slaapritme
+      door slimme planning en eenvoudige inzichten.
+    </p>
+    <span>UI/UX · iOS app concept</span>
+  </div>
+
+  <div class="card">
+    <div class="card-icon">
+      <i data-lucide="zap"></i>
+    </div>
+    <h3>Power Plan (iOS App)</h3>
+    <p>
+      Conceptueel systeem voor energiebeheer, focus en structuur
+      via duidelijke routines en slimme planning.
+    </p>
+    <span>Concept · System design · Productivity</span>
+    <button class="project-btn" type="button" data-video="assets/videos/powerplan.mp4">
+  Bekijk project
+    </button>
+  </div>
+
+
+</section>
+
+</main>
 
 <script>
   lucide.createIcons();
 </script>
+<script src="js/project-modal.js"></script>
+<div class="project-modal" id="projectModal">
+  <div class="project-modal-content">
+    <button class="modal-close">&times;</button>
+
+    <video id="projectVideo" controls playsinline>
+      <source id="projectVideoSource" src="" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<script src="js/page-transition.js"></script>
+
+
 </body>
 </html>

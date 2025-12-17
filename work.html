@@ -17,13 +17,14 @@
       <img src="assets/images/logo.png" alt="Nova Studio logo" />
     </a>
   </div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="work.html">Werk</a></li>
-    <li><a href="services.html">Diensten</a></li>
-    <li><a href="about.html">Over</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+<ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="work.html" class="active">Werk</a></li>
+  <li><a href="services.html">Diensten</a></li>
+  <li><a href="about.html">Over</a></li>
+  <li><a href="why.html" >Waarom</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
 
 <main class="container">
@@ -35,7 +36,7 @@
       <div class="card-icon">
         <i data-lucide="layout"></i>
       </div>
-      <h2>Nova Studio Portfolio</h2>
+      <h2>Nova Studio Portfolio (Website)</h2>
       <p>
         Ontwerp en ontwikkeling van een moderne portfolio website
         met focus op eenvoud, performance en duidelijke communicatie.
@@ -54,11 +55,40 @@
       </p>
       <span>UI/UX · iOS app concept</span>
     </div>
+
+    <!-- NIEUWE CARD – POWER PLAN -->
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="zap"></i>
+      </div>
+      <h2>Power Plan (iOS App)</h2>
+      <p>
+        Conceptueel systeem voor energiebeheer, focus en structuur.
+        Ontworpen om dagelijkse prestaties te optimaliseren via
+        duidelijke routines en slimme planning.
+      </p>
+      <span>Concept · System design · Productivity</span>
+      <button class="project-btn" data-video="assets/videos/powerplan.mp4">
+  Bekijk project
+</button>
+    </div>
   </div>
 </main>
 
 <script>
   lucide.createIcons();
 </script>
+<script src="js/project-modal.js"></script>
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <div class="project-modal-content" role="dialog" aria-modal="true">
+    <button class="modal-close" type="button">&times;</button>
+
+    <video id="projectVideo" controls playsinline>
+      <source id="projectVideoSource" src="" type="video/mp4">
+    </video>
+  </div>
+</div>
+<script src="js/page-transition.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Waarom een sterke website telt – Nova Studio</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <a href="index.html">
+      <img src="assets/images/logo.png" alt="Nova Studio logo" />
+    </a>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="work.html">Werk</a></li>
+    <li><a href="services.html">Diensten</a></li>
+    <li><a href="about.html">Over</a></li>
+    <li><a href="why.html" class="active">Waarom</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+
+  <h1>Waarom een sterke website telt</h1>
+  <p class="intro">
+    Voor veel bedrijven is een website “iets dat erbij hoort”.
+    In werkelijkheid is het vaak het eerste contactmoment
+    met een potentiële klant — en dus ook de eerste indruk.
+  </p>
+
+  <div class="card-group">
+
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="eye"></i>
+      </div>
+      <h3>Eerste indruk = vertrouwen</h3>
+      <p>
+        Bezoekers vormen binnen enkele seconden een mening.
+        Een onduidelijke of verouderde website wekt twijfel,
+        terwijl een heldere en professionele uitstraling
+        vertrouwen creëert.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="mouse-pointer-click"></i>
+      </div>
+      <h3>Bezoekers moeten geleid worden</h3>
+      <p>
+        Een goede website toont niet alleen informatie,
+        maar stuurt bezoekers richting actie.
+        Duidelijke structuur, logische keuzes en
+        gerichte call-to-actions maken het verschil.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="trending-up"></i>
+      </div>
+      <h3>Een website ondersteunt je groei</h3>
+      <p>
+        Wanneer een website goed is opgebouwd,
+        werkt ze mee aan je bedrijfsdoelen.
+        Ze wordt een actief hulpmiddel dat
+        meegroeit met je onderneming.
+      </p>
+    </div>
+
+    <!-- 🔥 NIEUWE CARD -->
+    <div class="card">
+      <div class="card-icon">
+        <i data-lucide="alert-triangle"></i>
+      </div>
+      <h3>Een verouderde website jaagt klanten weg</h3>
+      <p>
+        Mensen beslissen in enkele seconden of ze je vertrouwen.
+        Een oude website oogt onprofessioneel en onbetrouwbaar.
+        Dat kost aanvragen en omzet.
+      </p>
+
+      <button class="card-button" onclick="openCompareModal()">
+        Bekijk het verschil
+      </button>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- MODAL -->
+<!-- FULLSCREEN MODAL -->
+<div id="compareModal" class="modal-overlay">
+
+  <button class="modal-close" onclick="closeCompareModal()">✕</button>
+
+  <div class="modal-content">
+
+    <h2 class="modal-title">Verouderde vs moderne website</h2>
+
+    <div class="compare-grid">
+      <div class="compare-item">
+        <span class="label bad">❌ Verouderd</span>
+        <img src="assets/images/oldpage.png" alt="Verouderde website">
+      </div>
+
+      <div class="compare-item">
+        <span class="label good">✅ Modern</span>
+        <img src="assets/images/newpage.png" alt="Moderne website">
+      </div>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<script>
+  lucide.createIcons();
+
+  function openCompareModal() {
+    document.getElementById("compareModal").classList.add("active");
+  }
+
+  function closeCompareModal() {
+    document.getElementById("compareModal").classList.remove("active");
+  }
+</script>
+
+<script src="js/page-transition.js"></script>
+
+</body>
+</html>
