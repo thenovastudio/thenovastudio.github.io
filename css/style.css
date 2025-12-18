@@ -2,7 +2,7 @@
    GLOBAL VARIABLES
 ========================= */
 :root {
-  --accent: #2563eb;
+  --accent: #df4635;
 }
 
 /* =========================
@@ -94,7 +94,7 @@ main {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .home-grid {
     grid-template-columns: 1fr;
   }
@@ -135,8 +135,8 @@ p {
 ========================= */
 .cta {
   background: none;
-  border: 1px solid #5b3df5;
-  color: #5b3df5;
+  border: 1px solid var(--accent);
+  color: var(--accent);
   padding: 10px 16px;
   border-radius: 35px;
   font-size: 14px;
@@ -148,7 +148,7 @@ p {
 
 /* HOVER STATE */
 .cta:hover {
-  background: #5b3df5;
+  background: var(--accent);
   color: #fff;
 }
 
@@ -163,7 +163,7 @@ p {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .card-group {
     grid-template-columns: 1fr;
   }
@@ -171,7 +171,7 @@ p {
 
 
 .card {
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #eee;
   border-radius: 35px;
   padding: 28px;
@@ -278,8 +278,8 @@ p {
 /* PROJECT BUTTON */
 .project-btn {
   background: none;
-  border: 1px solid #5b3df5;
-  color: #5b3df5;
+  border: 1px solid var(--accent);
+  color: var(--accent);
   padding: 10px 16px;
   border-radius: 35px;
   font-size: 14px;
@@ -291,7 +291,7 @@ p {
 
 /* HOVER STATE */
 .project-btn:hover {
-  background: #5b3df5;
+  background: var(--accent);
   color: #fff;
 }
 
@@ -341,7 +341,7 @@ p {
   margin-top: 24px;
   font-size: 16px;
   font-weight: 500;
-  color: #5b3df5;
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -357,7 +357,7 @@ p {
 }
 
 .services-why a {
-  color: #5b3df5;
+  color: var(--accent);
   font-weight: 500;
   text-decoration: none;
 }
@@ -486,7 +486,7 @@ body.slide-out {
   box-shadow: 0 20px 60px rgba(0,0,0,0.5);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .compare-item img {
     max-height: 55vh;
   }
@@ -513,7 +513,7 @@ body.slide-out {
 }
 
 /* MOBILE */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .compare-grid {
     grid-template-columns: 1fr;
   }
@@ -525,8 +525,8 @@ body.slide-out {
 
 .card-button {
   background: none;
-  border: 1px solid #5b3df5;
-  color: #5b3df5;
+  border: 1px solid var(--accent);
+  color: var(--accent);
   padding: 10px 16px;
   border-radius: 35px;
   font-size: 14px;
@@ -538,7 +538,7 @@ body.slide-out {
 
 /* HOVER STATE */
 .card-button:hover {
-  background: #5b3df5;
+  background: var(--accent);
   color: #fff;
 }
 
