@@ -453,7 +453,9 @@ body.slide-out {
 }
 
 .modal-overlay.active {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-close {
@@ -493,6 +495,9 @@ body.slide-out {
   margin: 0 auto;
   padding: 5rem 2rem 3rem;
   color: #fff;
+  background: rgba(0, 0, 0, 0.95);
+  border-radius: 16px;
+  position: relative;
 }
 
 .modal-title {
@@ -555,7 +560,7 @@ body.slide-out {
   }
 
   .modal-content {
-    padding-top: 5rem;
+    padding-top: 1rem;
   }
 }
 
@@ -683,16 +688,29 @@ body.slide-out {
 
   /* ---------- FULLSCREEN COMPARE MODAL ---------- */
   .modal-content {
-    padding: 4rem 1rem 2rem;
+    padding: 0.5rem 0.5rem 1rem;
+    max-width: 95vw;
+    max-height: 90vh;
+    overflow: auto;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
   }
 
   .modal-title {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .compare-grid {
+    gap: 1rem;
   }
 
   .compare-item img {
-    max-height: 45vh;
+    max-height: 30vh;
     padding: 0.75rem;
     border-radius: 16px;
   }
