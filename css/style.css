@@ -25,6 +25,7 @@ body {
    NAVBAR
 ========================= */
 .nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -735,6 +736,10 @@ body.slide-out {
 
   .nav-links a:last-child {
     border-bottom: none;
+  }
+
+  .nav-links a.active {
+    border-radius: 4px;
   }
 
 }
